@@ -1111,14 +1111,15 @@ example <code>{"acorn": "lib/acorn/"}</code>.
 </dt>
 <dd>
 <p>
-An object that can be used to override some dependency
-names to refer to predetermined types. The value associated with a
-name can be a string starting with the character <code>=</code>, in which case
-the part after the <code>=</code> will be interpreted as a global variable (or
-dot-separated path) that contains the proper type. If it is a string
-not starting with <code>=</code>, it is interpreted as the path to the file that
-contains the code for the module. If it is an object, it is
-interpreted as <a href="#typedef">JSON type definition</a>.
+An object that can be used to override some dependency names to
+refer to predetermined types (this is useful for handling
+<a href="http://requirejs.org/docs/api.html#config-shim">shimmed</a> modules).
+The value associated with a name can be a string starting with the character
+<code>=</code>, in which case the part after the <code>=</code> will be
+interpreted as a global variable (or dot-separated path) that contains the proper
+type. If it is a string not starting with <code>=</code>, it is interpreted as
+the path to the file that contains the code for the module. If it is an object,
+it is interpreted as <a href="#typedef">JSON type definition</a>.
 </p>
 </dd>
 </dl>
